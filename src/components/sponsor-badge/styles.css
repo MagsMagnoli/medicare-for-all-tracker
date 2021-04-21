@@ -1,0 +1,21 @@
+.cosponsor-badge {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.cosponsor-badge-background,
+.cosponsor-badge-icon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cosponsor-badge-background {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  height: 90%;
+  width: 90%;
+}

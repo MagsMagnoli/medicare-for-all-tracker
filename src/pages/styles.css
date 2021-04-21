@@ -1,0 +1,98 @@
+:root {
+  --breakpoint-xl: 1200px;
+}
+
+header {
+  text-align: center;
+  font-size: 36px;
+  padding: 24px;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  padding: 45px;
+}
+
+.container-xl {
+  max-width: var(--breakpoint-xl);
+  width: 100%;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 2px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.mt-4 {
+  margin-top: 8px;
+}
+
+.mt-8 {
+  margin-top: 16px;
+}
+
+.block-image {
+  position: relative;
+}
+
+.stats {
+  font-size: 45px;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-white {
+  color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.ml-2 {
+  margin-left: 4px;
+}
+
+.ml-4 {
+  margin-left: 8px;
+}
+
+.ml-6 {
+  margin-left: 12px;
+}
+
+.ml-8 {
+  margin-left: 16px;
+}
+
+.ml-12 {
+  margin-left: 24px;
+}
+
+.block-image .cosponsor-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
