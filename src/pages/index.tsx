@@ -16,6 +16,7 @@ const IndexPage = () => {
           id
           firstName
           lastName
+          state
           chamber
           sponsor
           cosponsor
