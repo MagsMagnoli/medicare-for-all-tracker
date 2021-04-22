@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 import { Chamber, CongressPerson } from '../../models/congressperson';
+import { mergedStateNamesByStateKeys } from '../../models/state';
 import Avatar from '../avatar/Avatar';
 import SponsorBadge, { SponsorType } from '../sponsor-badge/SponsorBadge';
 import './styles.css';
@@ -10,6 +11,8 @@ enum Filter {
   Senate,
   None,
 }
+
+const processString = (s: string) => s.replaceAll(' ', '').toLowerCase();
 
 const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
   const [filteredData, setFilteredData] = useState(congressData);
@@ -23,11 +26,12 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
 
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFilteredData(
-      congressData.filter((item) =>
-        `${item.firstName}${item.lastName}`
-          .toLowerCase()
-          .includes(e.target.value.trim().replace(' ', '').toLowerCase()),
-      ),
+      congressData.filter((item) => {
+        const name = processString(`${item.firstName}${item.lastName}`);
+        const state = processString(mergedStateNamesByStateKeys[item.state]);
+        const query = processString(e.target.value);
+        return name.includes(query) || state.startsWith(query);
+      }),
     );
   };
 
@@ -63,10 +67,10 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
             <FaTimesCircle className="text-red ml-4" />
           </div>
           <input
-            style={{ padding: 8, width: 250 }}
+            style={{ padding: 8, width: 300 }}
             className="mt-4"
             type="text"
-            placeholder="Search"
+            placeholder="Search by name or state"
             onChange={handleSearchChange}
           />
         </div>
