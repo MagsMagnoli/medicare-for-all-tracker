@@ -26,7 +26,7 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
 
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFilteredData(
-      congressData.filter((item) => {
+      houseMembers.filter((item) => {
         const name = processString(`${item.firstName}${item.lastName}`);
         const state = processString(mergedStateNamesByStateKeys[item.state]);
         const query = processString(e.target.value);
@@ -34,21 +34,6 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
       }),
     );
   };
-
-  const handleFilter = (filter: Filter) => () => {
-    const data =
-      filter === Filter.None
-        ? congressData
-        : congressData.filter(
-            (item) =>
-              item.chamber ===
-              (filter === Filter.House ? Chamber.House : Chamber.Senate),
-          );
-
-    setFilteredData(data);
-  };
-
-  useEffect(handleFilter(Filter.House), [congressData]);
 
   return (
     <section className="section">
