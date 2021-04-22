@@ -107,7 +107,7 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
               </a>
               <div className="member-info mt-2">
                 <strong>{`${item.firstName} ${item.lastName}`}</strong>
-                <div>{item.state}</div>
+                <div>{`${item.party}-${item.state}`}</div>
               </div>
             </div>
           ))}
