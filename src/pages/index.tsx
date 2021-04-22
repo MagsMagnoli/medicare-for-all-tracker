@@ -18,6 +18,7 @@ const IndexPage = () => {
           lastName
           state
           chamber
+          party
           sponsor
           cosponsor
           twitterURL
