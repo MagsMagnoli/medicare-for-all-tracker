@@ -13,10 +13,15 @@ type SEOProps = {
   description?: string;
   lang?: string;
   meta?: any[];
-  title: string;
+  title?: string;
 };
 
-function SEO({ description = '', lang = 'en', meta = [], title }: SEOProps) {
+function SEO({
+  description = '',
+  lang = 'en',
+  meta = [],
+  title = '',
+}: SEOProps) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -39,8 +44,7 @@ function SEO({ description = '', lang = 'en', meta = [], title }: SEOProps) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      title={defaultTitle}
       meta={[
         {
           name: `description`,
