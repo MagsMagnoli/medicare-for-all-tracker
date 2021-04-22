@@ -10,3 +10,7 @@
     margin-left: 24px;
   }
 }
+
+.avatar-container {
+  content-visibility: auto;
+}

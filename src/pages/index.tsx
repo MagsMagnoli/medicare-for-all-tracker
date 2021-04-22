@@ -31,6 +31,7 @@ const IndexPage = () => {
 
   return (
     <>
+      <SEO title="" />
       <header className="mt-12">
         <h2>Medicare for All Tracker</h2>
       </header>

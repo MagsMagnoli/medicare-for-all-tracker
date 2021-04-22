@@ -14,8 +14,12 @@ enum Filter {
 const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
   const [filteredData, setFilteredData] = useState(congressData);
 
-  const yesSponsors = congressData.filter((item) => item.cosponsor).length;
-  const noSponsors = congressData.filter((item) => !item.cosponsor).length;
+  const houseMembers = congressData.filter(
+    (item) => item.chamber === Chamber.House,
+  );
+
+  const yesSponsors = houseMembers.filter((item) => item.cosponsor).length;
+  const noSponsors = houseMembers.filter((item) => !item.cosponsor).length;
 
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFilteredData(
