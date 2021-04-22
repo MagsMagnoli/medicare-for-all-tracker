@@ -5,7 +5,10 @@
 header {
   text-align: center;
   font-size: 36px;
-  padding: 24px;
+}
+
+p {
+  text-align: center;
 }
 
 .section {
@@ -37,6 +40,10 @@ header {
 
 .mt-8 {
   margin-top: 16px;
+}
+
+.mt-12 {
+  margin-top: 24px;
 }
 
 .block-image {

@@ -32,9 +32,10 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Medicare for All Tracker" />
-      <header>
+      <header className="mt-12">
         <h2>Medicare for All Tracker</h2>
       </header>
+      <p>Visualizing which members of the House support Medicare for All</p>
       <Sponsors congressData={congressData} />
       <Footer />
     </>
