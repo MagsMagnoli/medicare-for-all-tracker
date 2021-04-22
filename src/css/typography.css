@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/opensans-regular.ttf');
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/poppins-regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/opensans-bold.ttf');
+  font-family: 'Poppins';
+  src: url('../fonts/poppins/poppins-bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
