@@ -18,6 +18,7 @@ const Sponsors = ({ congressData }: { congressData: CongressPerson[] }) => {
   const houseMembers = congressData.filter(
     (item) => item.chamber === Chamber.House,
   );
+
   const [filteredData, setFilteredData] = useState(houseMembers);
 
   const yesSponsors = houseMembers.filter((item) => item.cosponsor).length;
