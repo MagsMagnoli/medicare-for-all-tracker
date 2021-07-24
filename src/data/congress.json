@@ -2883,22 +2883,6 @@
     "sponsor": false
   },
   {
-    "id": "G000588",
-    "firstName": "Anthony",
-    "lastName": "Gonzalez",
-    "title": "Rep.",
-    "state": "OH",
-    "party": "R",
-    "chamber": "House",
-    "phone": "202-225-3876",
-    "websiteURL": "https://anthonygonzalez.house.gov",
-    "facebookURL": "https://facebook.com/null",
-    "twitterURL": "https://twitter.com/RepAGonzalez",
-    "youtubeURL": "https://youtube.com/null",
-    "contactURL": null,
-    "sponsor": false
-  },
-  {
     "id": "G000581",
     "firstName": "Vicente",
     "lastName": "Gonzalez",
@@ -2910,6 +2894,22 @@
     "websiteURL": "https://gonzalez.house.gov",
     "facebookURL": "https://facebook.com/USCongressmanVicenteGonzalez",
     "twitterURL": "https://twitter.com/RepGonzalez",
+    "youtubeURL": "https://youtube.com/null",
+    "contactURL": null,
+    "sponsor": false
+  },
+  {
+    "id": "G000588",
+    "firstName": "Anthony",
+    "lastName": "Gonzalez",
+    "title": "Rep.",
+    "state": "OH",
+    "party": "R",
+    "chamber": "House",
+    "phone": "202-225-3876",
+    "websiteURL": "https://anthonygonzalez.house.gov",
+    "facebookURL": "https://facebook.com/null",
+    "twitterURL": "https://twitter.com/RepAGonzalez",
     "youtubeURL": "https://youtube.com/null",
     "contactURL": null,
     "sponsor": false
@@ -7517,7 +7517,8 @@
     "twitterURL": "https://twitter.com/Rep_Stansbury",
     "youtubeURL": "https://youtube.com/null",
     "contactURL": null,
-    "sponsor": false
+    "sponsor": false,
+    "cosponsor": true
   },
   {
     "id": "S001211",
@@ -7812,22 +7813,6 @@
     "cosponsor": true
   },
   {
-    "id": "T000467",
-    "firstName": "Glenn",
-    "lastName": "Thompson",
-    "title": "Rep.",
-    "state": "PA",
-    "party": "R",
-    "chamber": "House",
-    "phone": "202-225-5121",
-    "websiteURL": "https://thompson.house.gov",
-    "facebookURL": "https://facebook.com/CongressmanGT",
-    "twitterURL": "https://twitter.com/CongressmanGT",
-    "youtubeURL": "https://youtube.com/CongressmanGT",
-    "contactURL": null,
-    "sponsor": false
-  },
-  {
     "id": "T000193",
     "firstName": "Bennie",
     "lastName": "Thompson",
@@ -7843,6 +7828,22 @@
     "contactURL": null,
     "sponsor": false,
     "cosponsor": true
+  },
+  {
+    "id": "T000467",
+    "firstName": "Glenn",
+    "lastName": "Thompson",
+    "title": "Rep.",
+    "state": "PA",
+    "party": "R",
+    "chamber": "House",
+    "phone": "202-225-5121",
+    "websiteURL": "https://thompson.house.gov",
+    "facebookURL": "https://facebook.com/CongressmanGT",
+    "twitterURL": "https://twitter.com/CongressmanGT",
+    "youtubeURL": "https://youtube.com/CongressmanGT",
+    "contactURL": null,
+    "sponsor": false
   },
   {
     "id": "T000250",
