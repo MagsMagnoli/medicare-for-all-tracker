@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from '../components/footer/Footer';
 import SEO from '../components/seo';
 import Sponsors from '../components/sponsors/Sponsors';
+import { Support } from '../components/support/Support';
 import './styles.css';
 
 export const initials = (firstName: string, lastName: string) =>
@@ -38,6 +39,7 @@ const IndexPage = () => {
         <p>Visualizing which members of the House support Medicare for All</p>
       </header>
       <Sponsors congressData={congressData} />
+      <Support />
       <Footer />
     </>
   );
