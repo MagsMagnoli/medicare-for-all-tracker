@@ -14,3 +14,10 @@
 .avatar-container {
   content-visibility: auto;
 }
+
+.social-links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
